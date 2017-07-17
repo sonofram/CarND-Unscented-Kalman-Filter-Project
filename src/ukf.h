@@ -28,6 +28,7 @@ public:
   ///* state covariance matrix
   MatrixXd P_;
 
+
   ///* predicted sigma points matrix
   MatrixXd Xsig_pred_;
 
@@ -67,6 +68,12 @@ public:
   ///* Sigma point spreading parameter
   double lambda_;
 
+
+  ///* the current NIS for radar
+  double NIS_radar_;
+
+  ///* the current NIS for laser
+  double NIS_laser_;
 
   /**
    * Constructor
